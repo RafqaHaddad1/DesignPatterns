@@ -1,0 +1,11 @@
+C:\Users\test1\source\repos\DesignPattern\Behavioral\bin\Debug\net8.0\Behavioral.deps.json
+C:\Users\test1\source\repos\DesignPattern\Behavioral\bin\Debug\net8.0\Behavioral.dll
+C:\Users\test1\source\repos\DesignPattern\Behavioral\bin\Debug\net8.0\Behavioral.pdb
+C:\Users\test1\source\repos\DesignPattern\Behavioral\obj\Debug\net8.0\Behavioral.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\test1\source\repos\DesignPattern\Behavioral\obj\Debug\net8.0\Behavioral.AssemblyInfoInputs.cache
+C:\Users\test1\source\repos\DesignPattern\Behavioral\obj\Debug\net8.0\Behavioral.AssemblyInfo.cs
+C:\Users\test1\source\repos\DesignPattern\Behavioral\obj\Debug\net8.0\Behavioral.csproj.CoreCompileInputs.cache
+C:\Users\test1\source\repos\DesignPattern\Behavioral\obj\Debug\net8.0\Behavioral.dll
+C:\Users\test1\source\repos\DesignPattern\Behavioral\obj\Debug\net8.0\refint\Behavioral.dll
+C:\Users\test1\source\repos\DesignPattern\Behavioral\obj\Debug\net8.0\Behavioral.pdb
+C:\Users\test1\source\repos\DesignPattern\Behavioral\obj\Debug\net8.0\ref\Behavioral.dll

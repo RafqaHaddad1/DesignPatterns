@@ -1,0 +1,135 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0-windows7.0": {
+      "Behavioral/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Behavioral.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Behavioral.dll": {}
+        }
+      },
+      "Creational/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Creational.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Creational.dll": {}
+        }
+      },
+      "Structural/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Structural.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Structural.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Behavioral/1.0.0": {
+      "type": "project",
+      "path": "../Behavioral/Behavioral.csproj",
+      "msbuildProject": "../Behavioral/Behavioral.csproj"
+    },
+    "Creational/1.0.0": {
+      "type": "project",
+      "path": "../Creational/Creational.csproj",
+      "msbuildProject": "../Creational/Creational.csproj"
+    },
+    "Structural/1.0.0": {
+      "type": "project",
+      "path": "../Structural/Structural.csproj",
+      "msbuildProject": "../Structural/Structural.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0-windows7.0": [
+      "Behavioral >= 1.0.0",
+      "Creational >= 1.0.0",
+      "Structural >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\test1\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\test1\\source\\repos\\DesignPattern\\DesignPattternConsole\\DesignPattternConsole.csproj",
+      "projectName": "DesignPattternConsole",
+      "projectPath": "C:\\Users\\test1\\source\\repos\\DesignPattern\\DesignPattternConsole\\DesignPattternConsole.csproj",
+      "packagesPath": "C:\\Users\\test1\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\test1\\source\\repos\\DesignPattern\\DesignPattternConsole\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\test1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0-windows7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows7.0",
+          "projectReferences": {
+            "C:\\Users\\test1\\source\\repos\\DesignPattern\\Behavioral\\Behavioral.csproj": {
+              "projectPath": "C:\\Users\\test1\\source\\repos\\DesignPattern\\Behavioral\\Behavioral.csproj"
+            },
+            "C:\\Users\\test1\\source\\repos\\DesignPattern\\Creational\\Creational.csproj": {
+              "projectPath": "C:\\Users\\test1\\source\\repos\\DesignPattern\\Creational\\Creational.csproj"
+            },
+            "C:\\Users\\test1\\source\\repos\\DesignPattern\\Structural\\Structural.csproj": {
+              "projectPath": "C:\\Users\\test1\\source\\repos\\DesignPattern\\Structural\\Structural.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0-windows7.0": {
+        "targetAlias": "net8.0-windows7.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

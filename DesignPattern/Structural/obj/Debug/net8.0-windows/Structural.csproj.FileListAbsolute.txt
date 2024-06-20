@@ -1,0 +1,11 @@
+C:\Users\test1\source\repos\DesignPattern\Structural\bin\Debug\net8.0-windows\Structural.deps.json
+C:\Users\test1\source\repos\DesignPattern\Structural\bin\Debug\net8.0-windows\Structural.dll
+C:\Users\test1\source\repos\DesignPattern\Structural\bin\Debug\net8.0-windows\Structural.pdb
+C:\Users\test1\source\repos\DesignPattern\Structural\obj\Debug\net8.0-windows\Structural.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\test1\source\repos\DesignPattern\Structural\obj\Debug\net8.0-windows\Structural.AssemblyInfoInputs.cache
+C:\Users\test1\source\repos\DesignPattern\Structural\obj\Debug\net8.0-windows\Structural.AssemblyInfo.cs
+C:\Users\test1\source\repos\DesignPattern\Structural\obj\Debug\net8.0-windows\Structural.csproj.CoreCompileInputs.cache
+C:\Users\test1\source\repos\DesignPattern\Structural\obj\Debug\net8.0-windows\Structural.dll
+C:\Users\test1\source\repos\DesignPattern\Structural\obj\Debug\net8.0-windows\refint\Structural.dll
+C:\Users\test1\source\repos\DesignPattern\Structural\obj\Debug\net8.0-windows\Structural.pdb
+C:\Users\test1\source\repos\DesignPattern\Structural\obj\Debug\net8.0-windows\ref\Structural.dll

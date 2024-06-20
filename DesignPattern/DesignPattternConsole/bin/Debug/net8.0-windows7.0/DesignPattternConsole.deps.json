@@ -1,0 +1,58 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "DesignPattternConsole/1.0.0": {
+        "dependencies": {
+          "Behavioral": "1.0.0",
+          "Creational": "1.0.0",
+          "Structural": "1.0.0"
+        },
+        "runtime": {
+          "DesignPattternConsole.dll": {}
+        }
+      },
+      "Behavioral/1.0.0": {
+        "runtime": {
+          "Behavioral.dll": {}
+        }
+      },
+      "Creational/1.0.0": {
+        "runtime": {
+          "Creational.dll": {}
+        }
+      },
+      "Structural/1.0.0": {
+        "runtime": {
+          "Structural.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DesignPattternConsole/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Behavioral/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Creational/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Structural/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
