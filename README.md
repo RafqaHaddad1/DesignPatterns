@@ -220,33 +220,33 @@ In summary, the Prototype Pattern allows efficient object cloning and flexibilit
 
 The **Singleton pattern** is a software design pattern that ensures a class has only one instance and provides global access to that instance. Here are the key points:
 
-1. **Purpose and Benefits**:
+ **Purpose and Benefits**:
    - Restricts instantiation of a class to a single instance.
    - Useful when exactly one object is needed to coordinate actions across a system.
    - Solves problems related to shared resources, access control, and global state.
    - Provides easy access to the single instance.
 
-2. **Implementation**:
+ **Implementation**:
    - Declare all constructors of the class as private to prevent direct instantiation.
    - Provide a static method (often named `getInstance`) that returns a reference to the instance.
    - The instance is usually stored as a private static variable.
    - Lazy initialization: The instance is created when needed (when the static method is first called).
 
-3. **Real-Life Scenarios**:
+ **Real-Life Scenarios**:
    - **Database Connections**: Manage a single database connection.
    - **Configuration Files**: Read configuration settings once and reuse the same instance.
    - **Logging**: Implement a logging class with a single point of access.
 
-4. **Impact Analysis**:
+ **Impact Analysis**:
    - **Unit Testing**: Singleton's global state can make unit testing challenging.
    - **Resource Contention**: In multi-threaded apps, synchronization is crucial to avoid conflicts.
    - **Hidden Dependencies**: Singleton usage can lead to tightly coupled components.
 
-5. **When to Use**:
+ **When to Use**:
    - When a class should have only one instance shared across clients (e.g., a database object).
    - When stricter control over global variables is needed.
 
-6. **Difference between Static and Singleton**:
+ **Difference between Static and Singleton**:
    - **Static Class**: Cannot be instantiated; all members are static.
    - **Singleton Class**: Allows one instance, holds state, and provides global access.
    - A Static Class cannot be extended whereas a singleton class can be extended.
@@ -384,11 +384,13 @@ Remember, the Decorator pattern enhances flexibility and maintains a clean struc
 ---------------------------------------
 The **Facade** design pattern provides a simplified interface to a complex system of classes, libraries, or frameworks. It hides the underlying complexities and offers an easier way to access functionalities. Here's a summary:
 
-- **Purpose**: To provide a straightforward interface for a complex subsystem.
-- **Example**: Imagine a computer with operations like `startCPU()`, `loadRAM()`, and `readDisk()`. A `ComputerFacade` class could offer a single method, `startComputer()`, that encapsulates these operations, making it easier for users to operate the computer without dealing with low-level details.
-- **Use Cases**:
+ **Purpose**: To provide a straightforward interface for a complex subsystem.
+ 
+**Example**: Imagine a computer with operations like `startCPU()`, `loadRAM()`, and `readDisk()`. A `ComputerFacade` class could offer a single method, `startComputer()`, that encapsulates these operations, making it easier for users to operate the computer without dealing with low-level details.
+
+**Use Cases**:
     1. **Simplifying API Usage**: Facades can streamline interactions with complex APIs. Instead of making multiple API calls, a facade provides a single method that handles all necessary calls.
-    2. **Database Operations**: When saving a user to a database, a facade simplifies the process by offering a `saveUser` method that hides connection handling, query preparation, execution, and error handling. 😊
+    2. **Database Operations**: When saving a user to a database, a facade simplifies the process by offering a `saveUser` method that hides connection handling, query preparation, execution, and error handling. 
 
 ---------------------------------------
 ### F. Flyweight
@@ -396,14 +398,14 @@ The **Facade** design pattern provides a simplified interface to a complex syste
 ---------------------------------------
 The **Flyweight** design pattern aims to minimize memory usage and computational expenses by sharing as much data as possible among similar objects. Here's a summary:
 
-- **Purpose**: To efficiently manage a large number of fine-grained objects by sharing common data.
+**Purpose**: To efficiently manage a large number of fine-grained objects by sharing common data.
   
-- **Key Points**:
+**Key Points**:
     - Flyweight objects are immutable and initialized via constructor parameters.
     - They should not expose setters or public fields.
     - A factory method maintains a pool of flyweights, reusing existing ones or creating new ones as needed.
       
-- **Real-Life Scenarios**:
+**Real-Life Scenarios**:
     1. **Text Editors**: In text editors, the flyweight pattern manages character formatting. Shared objects represent characters with similar formatting, reducing memory usage.
     2. **Web Browsers**: Modern browsers use flyweights to prevent loading the same images twice. Cached images save bandwidth and speed up page rendering.
     3. **String Interning in Java**: The `java.lang.String` class reuses identical string instances using the flyweight pattern, saving memory.😊
@@ -414,13 +416,13 @@ The **Flyweight** design pattern aims to minimize memory usage and computational
 ---------------------------------------
 The **Proxy** design pattern allows you to add an extra layer of control over access to an object. Here's a summary:
 
-- **Purpose**: To control access to an object by acting as an intermediary.
+**Purpose**: To control access to an object by acting as an intermediary.
   
-- **Key Points**:
+**Key Points**:
     - Proxies can perform tasks like controlling object creation, managing access rights, providing a simplified interface, and adding security checks.
     - Types of proxies include virtual, protection, remote, logging, caching, and smart reference.
       
-- **Advantages**:
+**Advantages**:
     1. Control without clients knowing.
     2. Manage object lifecycle.
     3. Works even if the object isn't ready or available.
@@ -464,19 +466,19 @@ Concerned with algorithms and the assignment of responsibilities between objects
 ---------------------------------------
 The **Chain of Responsibility** design pattern allows you to pass requests along a chain of handlers. Each handler decides whether to process the request or pass it to the next handler in the chain. Here's a summary:
 
-- **Purpose**: To handle requests by linking multiple handlers into a chain.
+ **Purpose**: To handle requests by linking multiple handlers into a chain.
   
-- **Example**: Payment processing systems where a purchase request goes through handlers for different payment types (credit card, PayPal, etc.).
+ **Example**: Payment processing systems where a purchase request goes through handlers for different payment types (credit card, PayPal, etc.).
   
-- **Real-Life Scenarios**:
+ **Real-Life Scenarios**:
     1. **Event Handling in Web Development**: Event handling passes events up the DOM tree until a corresponding event handler is found.
     2. **Logging Systems**: Log messages can be passed through multiple handlers, each responsible for different logging actions (e.g., writing to a file, sending an email).
        
-- **When to Use**:
+**When to Use**:
     1. When your program processes different requests in various ways.
     2. When executing several handlers in a specific order is essential.
        
-- **Advantages**:
+ **Advantages**:
     1. Control over request handling order.
     2. Decoupling of classes that invoke operations from those that perform operations.
 
@@ -484,17 +486,14 @@ The **Chain of Responsibility** design pattern allows you to pass requests along
 ### B. Command
 
 ---------------------------------------
-The **Command Design Pattern** is a behavioral design pattern that encapsulates a request as an object. It allows for the parameterization of clients with different requests and supports undoable operations—actions that can be reversed or undone in a system. Let's break down the components:
+The **Command Design Pattern** is a behavioral design pattern that encapsulates a request as an object. It allows for the parameterization of clients with different requests and supports undoable operations—actions that can be reversed or undone in a system.
 
-1. **Command**: An interface for executing an operation.
-   
-3. **ConcreteCommand**: A class that extends the Command interface. It implements the Execute method by invoking corresponding operations on the Receiver object.
-   
-5. **Receiver**: This class knows how to perform the operations associated with carrying out a request. Any class can serve as a Receiver.
-   
-7. **Invoker**: A class that asks the command to carry out the request.
-   
-9. **Client**: The client creates a ConcreteCommand object and sets its receiver.
+Let's break down the components:
+ **Command**: An interface for executing an operation.
+ **ConcreteCommand**: A class that extends the Command interface. It implements the Execute method by invoking corresponding operations on the Receiver object.
+ **Receiver**: This class knows how to perform the operations associated with carrying out a request. Any class can serve as a Receiver. 
+ **Invoker**: A class that asks the command to carry out the request. 
+ **Client**: The client creates a ConcreteCommand object and sets its receiver.
     
 In practice, the Command pattern decouples the sender (Invoker) from the receiver (Receiver), allowing for flexibility and reusability in object-oriented software. It's particularly useful when you want to avoid hard-wiring requests directly into classes and need to specify requests at runtime. If you'd like an example, consider a remote control system for various devices, where each button press corresponds to a different command. 🚀
 
@@ -509,15 +508,14 @@ In practice, the Command pattern decouples the sender (Invoker) from the receive
 ---------------------------------------
 The **Mediator Design Pattern** is a behavioral pattern that defines an object—the mediator—to centralize communication between various components or objects in a system. By preventing direct interactions between components and having them communicate through the mediator, this pattern promotes loose coupling, better maintainability, and flexibility in system architecture¹.
 
-Here's a summary of the Mediator pattern:
 
-1. **Mediator**: The Mediator interface defines the communication contract, specifying methods that concrete mediators should implement to facilitate interactions among colleagues. It encapsulates the logic for coordinating and managing interactions between objects, promoting loose coupling and centralizing control over their communication.
+**Mediator**: The Mediator interface defines the communication contract, specifying methods that concrete mediators should implement to facilitate interactions among colleagues. It encapsulates the logic for coordinating and managing interactions between objects, promoting loose coupling and centralizing control over their communication.
 
-2. **Real-Life Analogy**: Imagine a group project in a classroom. Each student (colleague) has their tasks but needs to work together on a project. The teacher (mediator) acts as the intermediary. Instead of students talking directly to each other, they communicate through the teacher. The teacher manages communication, relaying information back and forth. This way, everyone collaborates effectively without dealing with all the details of each other's work¹.
+**Real-Life Analogy**: Imagine a group project in a classroom. Each student (colleague) has their tasks but needs to work together on a project. The teacher (mediator) acts as the intermediary. Instead of students talking directly to each other, they communicate through the teacher. The teacher manages communication, relaying information back and forth. This way, everyone collaborates effectively without dealing with all the details of each other's work¹.
 
-3. **Web Development Example**: In web development, the Mediator pattern can be seen in event management systems. Components communicate through a central event manager (the mediator) rather than directly with each other. For instance, in React, components update their state based on events without needing to know the inner workings of other components¹².
+**Web Development Example**: In web development, the Mediator pattern can be seen in event management systems. Components communicate through a central event manager (the mediator) rather than directly with each other. For instance, in React, components update their state based on events without needing to know the inner workings of other components¹².
 
-4. **Software Design Example**: An Integrated Development Environment (IDE) serves as a mediator between plugins and the core software. The IDE provides a central interface for plugins to extend functionality without modifying the core system directly. 🌟
+**Software Design Example**: An Integrated Development Environment (IDE) serves as a mediator between plugins and the core software. The IDE provides a central interface for plugins to extend functionality without modifying the core system directly. 🌟
 
 ---------------------------------------
 ### E. Memento
@@ -525,16 +523,16 @@ Here's a summary of the Mediator pattern:
 ---------------------------------------
  The **Memento Design Pattern** is a behavioral pattern that allows you to save and restore an object's internal state without revealing its implementation details. Here's how it works:
 
-1. **Components of the Memento Design Pattern**:
+**Components of the Memento Design Pattern**:
     - **Originator**: Responsible for creating and managing the state of an object. It can set and get the object's state and create Memento objects to store its state. The Originator communicates directly with the Memento to create snapshots of its state and restore from them.
     - **Memento**: An object that stores the state of the Originator at a specific point in time. It provides a way to retrieve the state without allowing direct modification.
     - **Caretaker**: Keeps track of Memento objects. It doesn't know the details of the state stored in the Memento but can request Mementos from the Originator to save or restore the object's state.
     - **Client**: Represents the part of the application or system that interacts with the Originator and Caretaker to achieve specific functionality. The client initiates requests to save or restore the state of the Originator through the Caretaker.
 
-2. **Real-Life Scenario**:
+ **Real-Life Scenario**:
     - Imagine you're building a text editor application with an undo feature. Each time the user modifies the text (typing, deleting, formatting), the editor's state (content and formatting) is saved as a memento. If the user wants to undo their last action, the editor restores its state from the most recent memento. Users can revert documents to previous states without needing to understand the internal representation of those states¹².
 
-3. **Use Cases**:
+ **Use Cases**:
     - When you want to produce snapshots of an object's state to restore a previous state (e.g., undo functionality).
     - When direct access to object fields or getters/setters violates encapsulation.
 The Memento pattern is impactful when historical states need to be maintained and restored later. It's particularly useful for reversible actions or capturing object snapshots¹. For instance, think of it as a safety net for your application's state! 📜🔍
@@ -548,22 +546,22 @@ The Memento pattern is impactful when historical states need to be maintained an
 
 Certainly! The **Observer Design Pattern** is a powerful behavioral pattern that allows you to define a subscription mechanism, notifying multiple objects (observers) about events that happen to the object they're observing (the subject). Let's explore some real-world scenarios where the Observer pattern shines:
 
-1. **Model-View-Controller (MVC) Frameworks**:
+ **Model-View-Controller (MVC) Frameworks**:
    - In MVC frameworks, the model represents the subject, and views act as observers. When the model undergoes changes (such as a database update), it notifies the views to update the user interface (UI) accordingly. For example, when a user's profile data changes, the associated views (like profile pages or dashboards) automatically reflect those updates¹.
 
-2. **Event Listeners in JavaScript**:
+ **Event Listeners in JavaScript**:
    - JavaScript relies heavily on event listeners, which essentially follow the Observer pattern. Elements on a webpage (the subjects) notify event handler functions (the observers) when specific events occur—such as button clicks, form submissions, or mouse movements. Event listeners allow dynamic interactions without tightly coupling the elements¹.
 
-3. **WebSocket Connections**:
+ **WebSocket Connections**:
    - In real-time applications, WebSocket servers act as subjects. When new data becomes available (e.g., chat messages, live scores, stock prices), they send notifications to connected clients (observers). The Observer pattern ensures that clients receive updates without constantly polling the server¹.
 
-4. **Notification Systems**:
+ **Notification Systems**:
    - Any application with a notification feature—whether it's email, social media, or task management—employs the Observer pattern. When new events (messages, friend requests, reminders) occur, the system notifies users through various channels. Observers (users) stay informed without needing to actively check for updates¹.
 
-5. **Data Binding**:
+ **Data Binding**:
    - Frameworks that support data binding (like Angular, React, or Vue.js) use the Observer pattern. UI components (observers) automatically sync with underlying data models (subjects). When data changes, the UI updates seamlessly. For instance, changing a form input value instantly reflects in the UI without manual intervention¹.
 
-6. **Isolation and Flexibility**:
+ **Isolation and Flexibility**:
    - The Observer pattern helps keep different parts of a system isolated. By decoupling subjects from observers, it promotes maintainability and extensibility. When changes in one component (subject) affect others (observers), managing these dependencies flexibly becomes crucial. The Observer pattern provides an elegant solution to this challenge¹.
 
 Remember, whether you're building web applications, desktop software, or mobile apps, the Observer pattern remains a valuable tool for managing communication and ensuring loose coupling between components. 🌟🔍
@@ -574,12 +572,12 @@ Remember, whether you're building web applications, desktop software, or mobile 
 ---------------------------------------
 The **State Design Pattern** is a behavioral pattern that allows an object to alter its behavior when its internal state changes. It appears as if the object changes its class dynamically based on its state. Let's dive into the details:
 
-1. **Components of the State Design Pattern**:
+ **Components of the State Design Pattern**:
     - **Context**: Represents the object whose behavior changes based on its internal state. It maintains a reference to the current state object.
     - **State Interface**: Defines the contract for concrete state classes. It typically includes methods that handle specific actions related to the state.
     - **Concrete State Classes**: These classes implement the State interface. Each concrete state class represents a specific state of the context object. They encapsulate behavior related to that state.
 
-2. **Example: Light Switch**:
+ **Example: Light Switch**:
     - Imagine a light switch with two possible states: "On" and "Off."
     - The `LightSwitch` class contains a reference to the `State` interface.
     - Two concrete state classes exist: `OnState` and `OffState`.
@@ -587,7 +585,7 @@ The **State Design Pattern** is a behavioral pattern that allows an object to al
     - When the `pressSwitch` method of the `LightSwitch` is called, it delegates the action to the current state's `handleRequest` method.
     - This results in toggling the light and changing the switch's state¹.
 
-3. **When to Use the State Pattern**:
+ **When to Use the State Pattern**:
     - **Multiple States with Distinct Behaviors**: If your object can exist in several states (e.g., On/Off, Open/Closed, Started/Stopped), and each state dictates unique behaviors, the State pattern effectively encapsulates this logic.
     - **Complex Conditional Logic**: When conditional statements (if-else or switch-case) become extensive and complex within your object, the State pattern organizes and separates state-specific behavior into individual classes, improving readability and maintainability.
     - **Frequent State Changes**: If your object transitions between states frequently (e.g., during user interactions), the State pattern provides a clear mechanism for managing these transitions and their associated actions.
@@ -602,22 +600,22 @@ Remember, the State pattern helps streamline state transitions, making your code
 
 The **Strategy pattern** is a powerful design pattern that allows you to define a family of algorithms, encapsulate each algorithm in a separate class, and make their objects interchangeable. Let's dive deeper into its key aspects:
 
-1. **Purpose and Example**:
+ **Purpose and Example**:
    - The Strategy pattern is useful when you have multiple algorithms that can be used interchangeably based on different contexts.
    - For instance:
      - In sorting, you might choose different sorting algorithms (e.g., bubble sort, merge sort, quick sort) based on the dataset's size or type.
      - In compression, you'd want to support various algorithms (like ZIP, RAR) and allow users to select their preferred one.
      - Navigation apps could use different routing strategies (fastest, shortest, avoiding tolls) that users can switch between.
 
-2. **Web Development and E-Commerce**:
+ **Web Development and E-Commerce**:
    - In web development, the Strategy pattern can be applied to form validation. Different strategies are used based on the form's context.
    - E-commerce platforms can use it for applying different discount strategies during checkout.
 
-3. **Software Development Impact**:
+ **Software Development Impact**:
    - The Strategy pattern allows you to maintain and extend algorithms without changing the clients that use them.
    - It provides flexibility and reusability by separating algorithm implementation from the context.
 
-4. **When to Use the Strategy Pattern**:
+ **When to Use the Strategy Pattern**:
    - **Multiple Algorithms**: When you have several interchangeable algorithms (sorting, searching, compression, etc.).
    - **Encapsulating Algorithms**: To separate algorithm details from the context, making maintenance and testing easier.
    - **Runtime Selection**: Dynamically switch between algorithms based on user preferences or system states.
@@ -632,14 +630,14 @@ Remember, the Strategy pattern promotes cleaner code, better separation of conce
 ---------------------------------------
 The **Template Method pattern** is a design pattern that defines the skeleton of an algorithm in a superclass but allows subclasses to override specific steps without altering the overall structure. Let's explore its key aspects:
 
-1. **Purpose and Example**:
+ **Purpose and Example**:
    - The Template Method pattern is useful when you want to create a common processing algorithm with a fixed sequence of steps, but allow customization of specific steps by subclasses.
    - For instance:
      - In an application framework for data processing, you could define a generic structure with steps like data loading, transformation, and storage. Subclasses customize each step's behavior without changing the overall sequence.
      - In web development, a web page generation framework might use this pattern. The base class defines rendering methods for header, content, and footer. Subclasses customize these methods for different page types while maintaining a consistent layout.
      - Similarly, in software design, a report generation system could use the Template Method pattern. The base class defines the report structure (title, table of contents, summary), and subclasses implement specific content for financial, sales, or inventory reports.
 
-2. **When to Use the Template Method Pattern**:
+ **When to Use the Template Method Pattern**:
    - When you want clients to extend specific steps of an algorithm without altering the entire structure.
    - When you have several classes with nearly identical algorithms, differing only in minor details.
   
@@ -653,7 +651,7 @@ Remember, the Template Method pattern promotes code reuse, consistency, and flex
 
 The **Visitor pattern** is a design pattern used when you need to perform an operation on a group of similar objects. Let's explore its key aspects:
 
-1. **Purpose and Example**:
+ **Purpose and Example**:
    - The Visitor pattern allows you to define an external visitor class that performs specific operations on elements of a complex structure (such as a hierarchy of shapes).
    - Consider a shape hierarchy with square and circle classes. Traditionally, you'd define an `area()` method in each shape class. However, the Visitor pattern offers an alternative.
    - Here's how it works:
@@ -661,7 +659,7 @@ The **Visitor pattern** is a design pattern used when you need to perform an ope
      - The shapes (square, circle) have an `accept()` method that takes the visitor and calls the appropriate visit method based on the shape's type.
      - This isolates area calculation logic, making it easier to add new shapes (with corresponding visit methods) without modifying existing shape classes.
 
-2. **Real-Life Scenarios**:
+**Real-Life Scenarios**:
    - In web development:
      - Use the Visitor pattern to perform rendering, validation, or serialization on different types of elements in a web page.
      - For example, create a `ValidationVisitor` that checks input elements for validity. Each input element class has an `accept` method for the visitor to perform validation logic.
