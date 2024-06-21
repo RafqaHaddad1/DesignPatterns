@@ -516,7 +516,13 @@ Certainly! The **Memento Design Pattern** is a behavioral pattern that allows yo
     - When direct access to object fields or getters/setters violates encapsulation.
 The Memento pattern is impactful when historical states need to be maintained and restored later. It's particularly useful for reversible actions or capturing object snapshots¹. For instance, think of it as a safety net for your application's state! 📜🔍
 
+
+---------------------------------------
 F. Observer
+
+
+---------------------------------------
+
 Certainly! The **Observer Design Pattern** is a powerful behavioral pattern that allows you to define a subscription mechanism, notifying multiple objects (observers) about events that happen to the object they're observing (the subject). Let's explore some real-world scenarios where the Observer pattern shines:
 
 1. **Model-View-Controller (MVC) Frameworks**:
