@@ -4,7 +4,7 @@ A design pattern typically involves implementing well-established solutions to c
 ## Table of Contents
 
 * [Creational Design Patterns](#Creational-Design-Patterns)
-    * [Factory Method](#Factory-Method)
+    * [Factory Method](#A.-Factory-Method)
     * [Abstract Factory](#Abstract-Factory)
     * [Builder](#Builder)
     * [Prototype](#Prototype)
