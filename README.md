@@ -229,7 +229,7 @@ The **Singleton pattern** is a software design pattern that ensures a class has 
 - The instance is usually stored as a private static variable.
 - Lazy initialization: The instance is created when needed (when the static method is first called).
 
-###🌍 Real-Life Scenarios
+### 🌍 Real-Life Scenarios
 - **Database Connections**: Manage a single database connection.
 - **Configuration Files**: Read configuration settings once and reuse the same instance.
 - **Logging**: Implement a logging class with a single point of access.
@@ -472,7 +472,7 @@ The Chain of Responsibility design pattern allows you to pass requests along a c
 ### 🎯 Purpose
 To handle requests by linking multiple handlers into a chain.
 
-##@ 🖼️ Example
+### 🖼️ Example
 - Payment processing systems where a purchase request goes through handlers for different payment types (credit card, PayPal, etc.).
 
 ### 🌍 Real-Life Scenarios
