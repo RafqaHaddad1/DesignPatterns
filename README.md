@@ -18,7 +18,7 @@ A design pattern typically involves implementing well-established solutions to c
     * [Flyweight](#f-flyweight)
     * [Proxy](#g-proxy)
 * [Behavioral Design Patterns](#Behavioral-Design-Pattern)
-    * [Chain of Responsibility](#a-chain-of-responsibility))
+    * [Chain of Responsibility](#a-chain-of-responsibility)
     * [Command](#b-command)
     * [Iterator](#c-iterator)
     * [Mediator](#d-mediator)
@@ -30,10 +30,6 @@ A design pattern typically involves implementing well-established solutions to c
     * [Visitor](#j-visitor)
 * [Reference](#References)
   
-## Installation
-
-## Usage
-
 ## Design Patterns:
 
 A design pattern project typically involves implementing well-established solutions to common software design problems. It focuses on structuring code in a reusable and maintainable way, enhancing software quality and developer productivity. Projects often include identifying appropriate patterns (like Singleton, Observer, or Factory), applying them to specific problem domains (like UI frameworks or database interactions), and documenting their usage for future reference. This approach not only improves code organization but also promotes a standardized way of tackling recurring design challenges across different software components.
@@ -646,6 +642,15 @@ Certainly! The **Visitor pattern** is a design pattern used when you need to per
        - Separating concerns allows you to add new operations without modifying existing code.
 Remember, the Visitor pattern promotes flexibility, maintainability, and separation of concerns 😊
 
+
+## Contact
+
+If you have any questions or feedback, feel free to reach out to us:
+
+- **Email:** [Rafqa.elhaddad@gmail.com](mailto:Rafqa.elhaddad@gmail.com)
+- **GitHub:** [RafqaHaddad1](https://github.com/RafqaHaddad1)
+
+We appreciate your interest in this project!
 
 ## References:
 
