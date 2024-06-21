@@ -1,6 +1,4 @@
-# 📄Design Pattern
-
-
+# 📄Design Patterns
 
 ## Table of Contents
 
