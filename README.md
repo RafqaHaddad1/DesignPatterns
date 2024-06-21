@@ -33,7 +33,7 @@
 
 A design pattern project typically involves implementing well-established solutions to common software design problems. It focuses on structuring code in a reusable and maintainable way, enhancing software quality and developer productivity. Projects often include identifying appropriate patterns (like Singleton, Observer, or Factory), applying them to specific problem domains (like UI frameworks or database interactions), and documenting their usage for future reference. This approach not only improves code organization but also promotes a standardized way of tackling recurring design challenges across different software components.
 
-## Creational Design Patterns:
+## Creational Design Patterns
 
 Provide various object creation mechanisms, which increase flexibility and reuse of existing code. Helps make a system independent of how its objects are created, composed and represented
 
@@ -41,7 +41,7 @@ Provide various object creation mechanisms, which increase flexibility and reuse
 ### A. Factory Method
 
 ---------------------------------------
-The **Factory Method Pattern** is a creational design pattern that provides an interface for creating objects in a superclass while allowing subclasses to determine the specific class or object to instantiate. Here are the key points:
+The **Factory Method Pattern** is a creational design pattern that provides an interface for creating objects in a superclass while allowing subclasses to determine the specific class or object to instantiate. 
 
  **Purpose**:
    - Abstracts the process of object creation, promoting loose coupling between the creator and the created object.
@@ -76,7 +76,7 @@ The **Factory Method Pattern** is a creational design pattern that provides an i
    - A powerful tool for managing complexity in software design.
 
  **Real-Life Scenario**:
-   - Notification System: The notification mode can vary based on user preferences or conditions¹.
+   - Notification System: The notification mode can vary based on user preferences or conditions.
 
 In summary, the Factory Method Pattern provides a way to create objects dynamically, allowing for flexibility and extensibility in software design. It's particularly useful when dealing with varying object types or when you want to encapsulate object creation logic
 
@@ -85,7 +85,7 @@ In summary, the Factory Method Pattern provides a way to create objects dynamica
 
 ---------------------------------------
 
-The **Abstract Factory Pattern** is a creational design pattern that organizes the creation of related or dependent objects without specifying their concrete classes. Here are the key points:
+The **Abstract Factory Pattern** is a creational design pattern that organizes the creation of related or dependent objects without specifying their concrete classes.
 
 **Purpose**:
    - Create families of related products (e.g., Chair, Sofa, CoffeeTable) with different variants (e.g., Modern, Victorian, ArtDeco).
@@ -182,7 +182,7 @@ The Builder pattern provides flexibility, reusability, and separation of concern
 
 ---------------------------------------
 
-The **Prototype Pattern** is a creational design pattern that allows you to copy existing objects without making your code dependent on their classes. Instead of building a new object from scratch, you create a copy of an existing object (the prototype) that serves as a blueprint and can be customized as needed. Let's break down the key points:
+The **Prototype Pattern** is a creational design pattern that allows you to copy existing objects without making your code dependent on their classes. Instead of building a new object from scratch, you create a copy of an existing object (the prototype) that serves as a blueprint and can be customized as needed. 
 
  **Purpose**:
    - The Prototype pattern solves the problem of creating exact copies of objects by delegating the cloning process to the objects themselves.
@@ -218,7 +218,7 @@ In summary, the Prototype Pattern allows efficient object cloning and flexibilit
 
 ---------------------------------------
 
-The **Singleton pattern** is a software design pattern that ensures a class has only one instance and provides global access to that instance. Here are the key points:
+The **Singleton pattern** is a software design pattern that ensures a class has only one instance and provides global access to that instance.
 
  **Purpose and Benefits**:
    - Restricts instantiation of a class to a single instance.
@@ -253,7 +253,7 @@ The **Singleton pattern** is a software design pattern that ensures a class has 
    - A Static Class cannot be initialized whereas a singleton class can be.
    - A Static class is loaded automatically by the CLR when the program containing the class is loaded.
      
-Remember, the Singleton pattern ensures a single point of access while managing global resources! 😊
+Remember, the Singleton pattern ensures a single point of access while managing global resources! 
 
 
 ## Structural Design Pattern
@@ -264,7 +264,7 @@ Concerned with how classes and objects are composed to from larger structures. T
 
 ---------------------------------------
 
-The **Adapter pattern** is a structural design pattern that allows two incompatible interfaces to collaborate. Here are the key points:
+The **Adapter pattern** is a structural design pattern that allows two incompatible interfaces to collaborate.
 
  **Purpose and Benefits**:
    - **Bridge Incompatible Interfaces**: The Adapter pattern acts as a bridge between existing classes with different interfaces.
@@ -283,14 +283,14 @@ The **Adapter pattern** is a structural design pattern that allows two incompati
    - Separates interface or data conversion code from business logic.
    - Allows introducing new adapters without breaking existing client code.
 
-Remember, the Adapter pattern ensures smooth collaboration between systems with different interfaces! 😊
+Remember, the Adapter pattern ensures smooth collaboration between systems with different interfaces! 
 
 ---------------------------------------
 ### B. Bridge
 
 ---------------------------------------
 
-The **Bridge pattern** is a structural design pattern that allows you to split a large class or closely related classes into two separate hierarchies: abstraction and implementation. Here are the key points:
+The **Bridge pattern** is a structural design pattern that allows you to split a large class or closely related classes into two separate hierarchies: abstraction and implementation. 
 
  **Purpose and Benefits**:
    - **Decoupling Abstraction and Implementation**: The Bridge pattern separates the high-level control layer (abstraction) from the actual code that performs operations (implementation).
@@ -311,14 +311,14 @@ The **Bridge pattern** is a structural design pattern that allows you to split a
    - To manage a proliferation of classes resulting from coupled interfaces.
    - When sharing an implementation among multiple objects.
 
-Remember, the Bridge pattern promotes modularity and flexibility by separating abstraction and implementation! 😊
+Remember, the Bridge pattern promotes modularity and flexibility by separating abstraction and implementation! 
 
 ---------------------------------------
 ### C. Composite
 
 ---------------------------------------
 
-The **Composite pattern** is a structural design pattern that allows you to compose objects into tree structures and work with them as if they were individual objects. Here are the key points:
+The **Composite pattern** is a structural design pattern that allows you to compose objects into tree structures and work with them as if they were individual objects.
 
  **Purpose and Benefits**:
    - **Tree-Like Object Structure**: The Composite pattern represents hierarchical structures where individual objects and compositions (composites) share a common interface.
@@ -340,14 +340,14 @@ The **Composite pattern** is a structural design pattern that allows you to comp
    - **File Systems**: Modeling files and directories.
    - **UI Components**: Simplifying manipulation of complex UI components.
 
-Remember, the Composite pattern simplifies working with hierarchical structures by treating compositions and individual elements uniformly! 😊
+Remember, the Composite pattern simplifies working with hierarchical structures by treating compositions and individual elements uniformly! 
 
 ---------------------------------------
 ### D. Decorator
 
 ---------------------------------------
 
-The **Decorator pattern** is a structural design pattern that allows you to add new functionality to an existing object without altering its original class. Here are the key points:
+The **Decorator pattern** is a structural design pattern that allows you to add new functionality to an existing object without altering its original class.
 
  **Purpose and Benefits**:
    - **Dynamic Behavior Extension**: The Decorator pattern dynamically adds behavior to an object without affecting other instances of the same class.
@@ -376,17 +376,19 @@ The **Decorator pattern** is a structural design pattern that allows you to add 
    - Combine multiple behaviors using decorators.
    - Divide monolithic classes into smaller ones.
 
-Remember, the Decorator pattern enhances flexibility and maintains a clean structure! 😊
+Remember, the Decorator pattern enhances flexibility and maintains a clean structure! 
 
 ---------------------------------------
 ### E. Facade
 
 ---------------------------------------
-The **Facade** design pattern provides a simplified interface to a complex system of classes, libraries, or frameworks. It hides the underlying complexities and offers an easier way to access functionalities. Here's a summary:
+The **Facade** design pattern provides a simplified interface to a complex system of classes, libraries, or frameworks. It hides the underlying complexities and offers an easier way to access functionalities. 
 
- **Purpose**: To provide a straightforward interface for a complex subsystem.
+**Purpose**:
+    To provide a straightforward interface for a complex subsystem.
  
-**Example**: Imagine a computer with operations like `startCPU()`, `loadRAM()`, and `readDisk()`. A `ComputerFacade` class could offer a single method, `startComputer()`, that encapsulates these operations, making it easier for users to operate the computer without dealing with low-level details.
+**Example**: 
+   - Imagine a computer with operations like `startCPU()`, `loadRAM()`, and `readDisk()`. A `ComputerFacade` class could offer a single method, `startComputer()`, that encapsulates these operations, making it easier for users to operate the computer without dealing with low-level details.
 
 **Use Cases**:
     1. **Simplifying API Usage**: Facades can streamline interactions with complex APIs. Instead of making multiple API calls, a facade provides a single method that handles all necessary calls.
@@ -396,9 +398,10 @@ The **Facade** design pattern provides a simplified interface to a complex syste
 ### F. Flyweight
 
 ---------------------------------------
-The **Flyweight** design pattern aims to minimize memory usage and computational expenses by sharing as much data as possible among similar objects. Here's a summary:
+The **Flyweight** design pattern aims to minimize memory usage and computational expenses by sharing as much data as possible among similar objects.
 
-**Purpose**: To efficiently manage a large number of fine-grained objects by sharing common data.
+**Purpose**: 
+   - To efficiently manage a large number of fine-grained objects by sharing common data.
   
 **Key Points**:
     - Flyweight objects are immutable and initialized via constructor parameters.
@@ -414,13 +417,13 @@ The **Flyweight** design pattern aims to minimize memory usage and computational
 ### G. Proxy
 
 ---------------------------------------
-The **Proxy** design pattern allows you to add an extra layer of control over access to an object. Here's a summary:
+The **Proxy** design pattern allows you to add an extra layer of control over access to an object. 
 
 **Purpose**: To control access to an object by acting as an intermediary.
   
 **Key Points**:
-    - Proxies can perform tasks like controlling object creation, managing access rights, providing a simplified interface, and adding security checks.
-    - Types of proxies include virtual, protection, remote, logging, caching, and smart reference.
+    1. Proxies can perform tasks like controlling object creation, managing access rights, providing a simplified interface, and adding security checks.
+    2. Types of proxies include virtual, protection, remote, logging, caching, and smart reference.
       
 **Advantages**:
     1. Control without clients knowing.
@@ -466,9 +469,11 @@ Concerned with algorithms and the assignment of responsibilities between objects
 ---------------------------------------
 The **Chain of Responsibility** design pattern allows you to pass requests along a chain of handlers. Each handler decides whether to process the request or pass it to the next handler in the chain. Here's a summary:
 
- **Purpose**: To handle requests by linking multiple handlers into a chain.
+ **Purpose**: 
+    - To handle requests by linking multiple handlers into a chain.
   
- **Example**: Payment processing systems where a purchase request goes through handlers for different payment types (credit card, PayPal, etc.).
+ **Example**: 
+    - Payment processing systems where a purchase request goes through handlers for different payment types (credit card, PayPal, etc.).
   
  **Real-Life Scenarios**:
     1. **Event Handling in Web Development**: Event handling passes events up the DOM tree until a corresponding event handler is found.
@@ -509,19 +514,23 @@ In practice, the Command pattern decouples the sender (Invoker) from the receive
 The **Mediator Design Pattern** is a behavioral pattern that defines an object—the mediator—to centralize communication between various components or objects in a system. By preventing direct interactions between components and having them communicate through the mediator, this pattern promotes loose coupling, better maintainability, and flexibility in system architecture¹.
 
 
-**Mediator**: The Mediator interface defines the communication contract, specifying methods that concrete mediators should implement to facilitate interactions among colleagues. It encapsulates the logic for coordinating and managing interactions between objects, promoting loose coupling and centralizing control over their communication.
+**Mediator**: 
+   - The Mediator interface defines the communication contract, specifying methods that concrete mediators should implement to facilitate interactions among colleagues. It encapsulates the logic for coordinating and managing interactions between objects, promoting loose coupling and centralizing control over their communication.
 
-**Real-Life Analogy**: Imagine a group project in a classroom. Each student (colleague) has their tasks but needs to work together on a project. The teacher (mediator) acts as the intermediary. Instead of students talking directly to each other, they communicate through the teacher. The teacher manages communication, relaying information back and forth. This way, everyone collaborates effectively without dealing with all the details of each other's work¹.
+**Real-Life Analogy**:
+   - Imagine a group project in a classroom. Each student (colleague) has their tasks but needs to work together on a project. The teacher (mediator) acts as the intermediary. Instead of students talking directly to each other, they communicate through the teacher. The teacher manages communication, relaying information back and forth. This way, everyone collaborates effectively without dealing with all the details of each other's work¹.
 
-**Web Development Example**: In web development, the Mediator pattern can be seen in event management systems. Components communicate through a central event manager (the mediator) rather than directly with each other. For instance, in React, components update their state based on events without needing to know the inner workings of other components¹².
+**Web Development Example**: 
+   - In web development, the Mediator pattern can be seen in event management systems. Components communicate through a central event manager (the mediator) rather than directly with each other. For instance, in React, components update their state based on events without needing to know the inner workings of other components¹².
 
-**Software Design Example**: An Integrated Development Environment (IDE) serves as a mediator between plugins and the core software. The IDE provides a central interface for plugins to extend functionality without modifying the core system directly. 🌟
+**Software Design Example**: 
+   - An Integrated Development Environment (IDE) serves as a mediator between plugins and the core software. The IDE provides a central interface for plugins to extend functionality without modifying the core system directly. 
 
 ---------------------------------------
 ### E. Memento
 
 ---------------------------------------
- The **Memento Design Pattern** is a behavioral pattern that allows you to save and restore an object's internal state without revealing its implementation details. Here's how it works:
+ The **Memento Design Pattern** is a behavioral pattern that allows you to save and restore an object's internal state without revealing its implementation details. 
 
 **Components of the Memento Design Pattern**:
     - **Originator**: Responsible for creating and managing the state of an object. It can set and get the object's state and create Memento objects to store its state. The Originator communicates directly with the Memento to create snapshots of its state and restore from them.
@@ -535,7 +544,8 @@ The **Mediator Design Pattern** is a behavioral pattern that defines an object�
  **Use Cases**:
     - When you want to produce snapshots of an object's state to restore a previous state (e.g., undo functionality).
     - When direct access to object fields or getters/setters violates encapsulation.
-The Memento pattern is impactful when historical states need to be maintained and restored later. It's particularly useful for reversible actions or capturing object snapshots¹. For instance, think of it as a safety net for your application's state! 📜🔍
+
+The Memento pattern is impactful when historical states need to be maintained and restored later. It's particularly useful for reversible actions or capturing object snapshots¹. For instance, think of it as a safety net for your application's state! 
 
 
 ---------------------------------------
@@ -591,7 +601,7 @@ The **State Design Pattern** is a behavioral pattern that allows an object to al
     - **Frequent State Changes**: If your object transitions between states frequently (e.g., during user interactions), the State pattern provides a clear mechanism for managing these transitions and their associated actions.
     - **Adding New States Easily**: If you anticipate adding new states in the future, the State pattern allows you to create new state classes without affecting existing ones¹.
 
-Remember, the State pattern helps streamline state transitions, making your code more modular and adaptable. Whether it's a light switch, a traffic light, or any other system with changing states, this pattern provides an elegant solution! 🌟🔌
+Remember, the State pattern helps streamline state transitions, making your code more modular and adaptable. Whether it's a light switch, a traffic light, or any other system with changing states, this pattern provides an elegant solution! 
 
 ---------------------------------------
 ### H. Strategy
