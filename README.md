@@ -475,13 +475,9 @@ Certainly! The **Command Design Pattern** is a behavioral design pattern that en
 In practice, the Command pattern decouples the sender (Invoker) from the receiver (Receiver), allowing for flexibility and reusability in object-oriented software. It's particularly useful when you want to avoid hard-wiring requests directly into classes and need to specify requests at runtime. If you'd like an example, consider a remote control system for various devices, where each button press corresponds to a different command. 🚀
 
 ---------------------------------------
-C. Iterator
+C. Iterator: Lets you traverse elements of a collection without exposing its underlying representation (list, stack, tree…)
 
 ---------------------------------------
-
-Lets you traverse elements of a collection without exposing its underlying representation (list, stack, tree…)
-
-
 
 ---------------------------------------
 D. Mediator
