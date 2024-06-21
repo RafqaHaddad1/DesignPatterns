@@ -1,6 +1,6 @@
-# Design Pattern
+# 📄Design Pattern
 
-## Table of Contents
+## 📚Table of Contents
 
 * [Creational Design Patterns](#Creational-Design-Patterns)
     * [Factory Method](#a-factory-method)
@@ -395,6 +395,7 @@ Remember, the Decorator pattern enhances flexibility and maintains a clean struc
 
 ---------------------------------------
 ### F. Flyweight
+
 ---------------------------------------
 
 **Overview**: The Flyweight design pattern minimizes memory usage and computational expenses by sharing data among similar objects.
