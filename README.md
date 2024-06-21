@@ -27,7 +27,7 @@
     * [Strategy](#h-strategy)
     * [Template](#i-template)
     * [Visitor](#j-visitor)
-* [Reference](#References)
+* [References](#References)
   
 ## Design Patterns
 
@@ -637,7 +637,7 @@ If you have any questions or feedback, feel free to reach out to us:
 
 We appreciate your interest in this project!
 
-## References:
+## Reference:
 
 https://www.tutorialspoint.com/design_pattern/index.htm
 
