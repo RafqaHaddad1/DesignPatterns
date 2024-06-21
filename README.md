@@ -33,7 +33,7 @@
     * [Strategy](#h-strategy)
     * [Template](#i-template)
     * [Visitor](#j-visitor)
-* [References](#References)
+* [References](#Reference)
   
 ## Design Patterns
 
