@@ -3,7 +3,7 @@ A design pattern typically involves implementing well-established solutions to c
 
 ## Table of content
 - [Creational Design Patterns](#Creational-Design-Patterns)
-  - [Factory Method](#Factory-Method)
+  - [Factory Method](#factory-method)
   - [Abstract Factory](#Abstract-Factory)
   - [Builder](#Builder)
   - [Prototype](#Prototype)
@@ -40,7 +40,7 @@ A design pattern project typically involves implementing well-established soluti
 Provide various object creation mechanisms, which increase flexibility and reuse of existing code. Helps make a system independent of how its objects are created, composed and represented
 
 ---------------------------------------
-### A. Factory Method:
+### A. Factory Method
 
 ---------------------------------------
 The **Factory Method Pattern** is a creational design pattern that provides an interface for creating objects in a superclass while allowing subclasses to determine the specific class or object to instantiate. Here are the key points:
