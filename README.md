@@ -29,7 +29,7 @@
     * [Visitor](#j-visitor)
 * [Reference](#References)
   
-## Design Patterns:
+## Design Patterns
 
 A design pattern project typically involves implementing well-established solutions to common software design problems. It focuses on structuring code in a reusable and maintainable way, enhancing software quality and developer productivity. Projects often include identifying appropriate patterns (like Singleton, Observer, or Factory), applying them to specific problem domains (like UI frameworks or database interactions), and documenting their usage for future reference. This approach not only improves code organization but also promotes a standardized way of tackling recurring design challenges across different software components.
 
