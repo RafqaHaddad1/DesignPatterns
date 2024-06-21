@@ -32,7 +32,7 @@ A design pattern typically involves implementing well-established solutions to c
 
 ## Design Patterns:
 
-1. Creational Design Patterns:
+## Creational Design Patterns:
 Provide various object creation mechanisms, which increase flexibility and reuse of existing code. Helps make a system independent of how its objects are created, composed and represented
 
 A. Factory Method:
@@ -229,7 +229,8 @@ Certainly! The **Singleton pattern** is a software design pattern that ensures a
    - A Static class is loaded automatically by the CLR when the program containing the class is loaded.
 Remember, the Singleton pattern ensures a single point of access while managing global resources! 😊
 
-2. Structural Design Pattern
+
+## Structural Design Pattern
 Concerned with how classes and objects are composed to from larger structures. They help ensure that when one part of a system changes, the entire structure does not need to do the same. Explain how to assemble objects and classes into larger structures, while keeping these structures flexible and efficient
 
 A. Adapter
@@ -394,7 +395,8 @@ Different types of proxies and their use cases:
    - Reuses cached results when the same inputs occur again.
    - Useful in web development for caching web pages, API calls, or database queries.
 
-3. Behavioral Design Pattern
+  
+## Behavioral Design Pattern
 Concerned with algorithms and the assignment of responsibilities between objects, they focus on the patterns of communication between classes or objects
 
 
