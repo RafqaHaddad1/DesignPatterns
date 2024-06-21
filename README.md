@@ -28,7 +28,7 @@ A design pattern typically involves implementing well-established solutions to c
     * [Strategy](#h-strategy)
     * [Template](#i-template)
     * [Visitor](#j-visitor)
- *[Reference](#References)
+* [Reference](#References)
   
 ## Installation
 
