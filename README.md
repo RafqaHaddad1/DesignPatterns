@@ -2,10 +2,6 @@
 
 
 
-
-
-
-
 ## Table of Contents
 
 * [Creational Design Patterns](#Creational-Design-Patterns)
@@ -33,6 +29,7 @@
     * [Strategy](#h-strategy)
     * [Template](#i-template)
     * [Visitor](#j-visitor)
+* [Contact](#Contact)
 * [References](#Reference)
   
 ## Design Patterns
@@ -646,12 +643,14 @@ We appreciate your interest in this project!
 
 ## Reference
 
-https://www.tutorialspoint.com/design_pattern/index.htm
+- [Refactoring Guru]( https://refactoring.guru/design-patterns/)
+- [TutorialsPoint]( https://www.tutorialspoint.com/design_pattern/index.htm)
+- [DotnetTutorials](https://dotnettutorials.net/lesson/design-patterns-online-training/)
+- [DoFactory](https://www.dofactory.com/net/design-patterns)
+- [GeeksForGeeks](https://www.geeksforgeeks.org/software-design-patterns/?ref=lbp)
 
-https://refactoring.guru/design-patterns
 
-https://dotnettutorials.net/lesson/design-patterns-online-training/
 
-https://www.dofactory.com/net/design-patterns
 
-https://www.geeksforgeeks.org/software-design-patterns/?ref=lbp
+
+
