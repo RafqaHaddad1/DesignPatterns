@@ -478,7 +478,10 @@ In practice, the Command pattern decouples the sender (Invoker) from the receive
 C. Iterator
 
 ---------------------------------------
+
 Lets you traverse elements of a collection without exposing its underlying representation (list, stack, tree…)
+
+
 
 ---------------------------------------
 D. Mediator
