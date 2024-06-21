@@ -27,6 +27,7 @@ A design pattern typically involves implementing well-established solutions to c
      - [Strategy](#Strategy)
      - [Template Method](#Template)
      - [Visitor](#Visitor)
+- [References](#References)
 ## Installation
 
 ## Usage
@@ -39,7 +40,7 @@ A design pattern project typically involves implementing well-established soluti
 Provide various object creation mechanisms, which increase flexibility and reuse of existing code. Helps make a system independent of how its objects are created, composed and represented
 
 ---------------------------------------
-A. Factory Method:
+### A. Factory Method:
 
 ---------------------------------------
 The **Factory Method Pattern** is a creational design pattern that provides an interface for creating objects in a superclass while allowing subclasses to determine the specific class or object to instantiate. Here are the key points:
@@ -82,7 +83,7 @@ The **Factory Method Pattern** is a creational design pattern that provides an i
 In summary, the Factory Method Pattern provides a way to create objects dynamically, allowing for flexibility and extensibility in software design. It's particularly useful when dealing with varying object types or when you want to encapsulate object creation logic
 
 ---------------------------------------
-B. Abstract Factory
+### B. Abstract Factory
 
 ---------------------------------------
 Certainly! The **Abstract Factory Pattern** is a creational design pattern that organizes the creation of related or dependent objects without specifying their concrete classes. Here are the key points:
@@ -143,7 +144,7 @@ In summary:
 - **Abstract Factory** deals with creating families of related objects. It ensures consistency and extensibility across different families .
 
 ---------------------------------------
-C. Builder
+### C. Builder
 
 ---------------------------------------
 Certainly! Let's summarize the **Builder Pattern**:
@@ -175,7 +176,7 @@ Certainly! Let's summarize the **Builder Pattern**:
 The Builder pattern provides flexibility, reusability, and separation of concerns in complex object creation.
 
 ---------------------------------------
-D. Prototype
+### D. Prototype
 
 ---------------------------------------
 Certainly! The **Prototype Pattern** is a creational design pattern that allows you to copy existing objects without making your code dependent on their classes. Instead of building a new object from scratch, you create a copy of an existing object (the prototype) that serves as a blueprint and can be customized as needed. Let's break down the key points:
@@ -210,7 +211,7 @@ Certainly! The **Prototype Pattern** is a creational design pattern that allows 
 In summary, the Prototype Pattern allows efficient object cloning and flexibility in creating complex objects.
 
 ---------------------------------------
-E. Singleton
+### E. Singleton
 
 ---------------------------------------
 Certainly! The **Singleton pattern** is a software design pattern that ensures a class has only one instance and provides global access to that instance. Here are the key points:
@@ -254,7 +255,7 @@ Remember, the Singleton pattern ensures a single point of access while managing 
 Concerned with how classes and objects are composed to from larger structures. They help ensure that when one part of a system changes, the entire structure does not need to do the same. Explain how to assemble objects and classes into larger structures, while keeping these structures flexible and efficient
 
 ---------------------------------------
-A. Adapter
+### A. Adapter
 
 ---------------------------------------
 Certainly! The **Adapter pattern** is a structural design pattern that allows two incompatible interfaces to collaborate. Here are the key points:
@@ -279,7 +280,7 @@ Certainly! The **Adapter pattern** is a structural design pattern that allows tw
 Remember, the Adapter pattern ensures smooth collaboration between systems with different interfaces! 😊
 
 ---------------------------------------
-B. Bridge
+### B. Bridge
 
 ---------------------------------------
 
@@ -303,7 +304,7 @@ Certainly! The **Bridge pattern** is a structural design pattern that allows you
 Remember, the Bridge pattern promotes modularity and flexibility by separating abstraction and implementation! 😊
 
 ---------------------------------------
-C. Composite
+### C. Composite
 
 ---------------------------------------
 
@@ -332,7 +333,7 @@ Certainly! The **Composite pattern** is a structural design pattern that allows 
 Remember, the Composite pattern simplifies working with hierarchical structures by treating compositions and individual elements uniformly! 😊
 
 ---------------------------------------
-D. Decorator
+### D. Decorator
 
 ---------------------------------------
 
@@ -368,7 +369,7 @@ The **Decorator pattern** is a structural design pattern that allows you to add 
 Remember, the Decorator pattern enhances flexibility and maintains a clean structure! 😊
 
 ---------------------------------------
-E. Facade
+### E. Facade
 
 ---------------------------------------
 Certainly! The **Facade** design pattern provides a simplified interface to a complex system of classes, libraries, or frameworks. It hides the underlying complexities and offers an easier way to access functionalities. Here's a summary:
@@ -380,7 +381,7 @@ Certainly! The **Facade** design pattern provides a simplified interface to a co
     2. **Database Operations**: When saving a user to a database, a facade simplifies the process by offering a `saveUser` method that hides connection handling, query preparation, execution, and error handling. 😊
 
 ---------------------------------------
-F. Flyweight
+### F. Flyweight
 
 ---------------------------------------
 Certainly! The **Flyweight** design pattern aims to minimize memory usage and computational expenses by sharing as much data as possible among similar objects. Here's a summary:
@@ -396,7 +397,7 @@ Certainly! The **Flyweight** design pattern aims to minimize memory usage and co
     3. **String Interning in Java**: The `java.lang.String` class reuses identical string instances using the flyweight pattern, saving memory.😊
 
 ---------------------------------------
-G. Proxy
+### G. Proxy
 
 ---------------------------------------
 Certainly! The **Proxy** design pattern allows you to add an extra layer of control over access to an object. Here's a summary:
@@ -444,7 +445,7 @@ Concerned with algorithms and the assignment of responsibilities between objects
 
 
 ---------------------------------------
-A. Chain of Responsibility
+### A. Chain of Responsibility
 
 ---------------------------------------
 Certainly! The **Chain of Responsibility** design pattern allows you to pass requests along a chain of handlers. Each handler decides whether to process the request or pass it to the next handler in the chain. Here's a summary:
@@ -462,7 +463,7 @@ Certainly! The **Chain of Responsibility** design pattern allows you to pass req
     2. Decoupling of classes that invoke operations from those that perform operations.
 
 ---------------------------------------
-B. Command
+### B. Command
 
 ---------------------------------------
 Certainly! The **Command Design Pattern** is a behavioral design pattern that encapsulates a request as an object. It allows for the parameterization of clients with different requests and supports undoable operations—actions that can be reversed or undone in a system. Let's break down the components:
@@ -475,12 +476,12 @@ Certainly! The **Command Design Pattern** is a behavioral design pattern that en
 In practice, the Command pattern decouples the sender (Invoker) from the receiver (Receiver), allowing for flexibility and reusability in object-oriented software. It's particularly useful when you want to avoid hard-wiring requests directly into classes and need to specify requests at runtime. If you'd like an example, consider a remote control system for various devices, where each button press corresponds to a different command. 🚀
 
 ---------------------------------------
-C. Iterator: Lets you traverse elements of a collection without exposing its underlying representation (list, stack, tree…)
+### C. Iterator: Lets you traverse elements of a collection without exposing its underlying representation (list, stack, tree…)
 
 ---------------------------------------
 
 ---------------------------------------
-D. Mediator
+### D. Mediator
 
 ---------------------------------------
 Certainly! The **Mediator Design Pattern** is a behavioral pattern that defines an object—the mediator—to centralize communication between various components or objects in a system. By preventing direct interactions between components and having them communicate through the mediator, this pattern promotes loose coupling, better maintainability, and flexibility in system architecture¹.
@@ -496,7 +497,7 @@ Here's a summary of the Mediator pattern:
 4. **Software Design Example**: An Integrated Development Environment (IDE) serves as a mediator between plugins and the core software. The IDE provides a central interface for plugins to extend functionality without modifying the core system directly. 🌟
 
 ---------------------------------------
-E. Memento
+### E. Memento
 
 ---------------------------------------
 
@@ -518,7 +519,7 @@ The Memento pattern is impactful when historical states need to be maintained an
 
 
 ---------------------------------------
-F. Observer
+### F. Observer
 
 
 ---------------------------------------
@@ -546,7 +547,7 @@ Certainly! The **Observer Design Pattern** is a powerful behavioral pattern that
 Remember, whether you're building web applications, desktop software, or mobile apps, the Observer pattern remains a valuable tool for managing communication and ensuring loose coupling between components. 🌟🔍
 
 ---------------------------------------
-G. State
+### G. State
 
 ---------------------------------------
 Certainly! The **State Design Pattern** is a behavioral pattern that allows an object to alter its behavior when its internal state changes. It appears as if the object changes its class dynamically based on its state. Let's dive into the details:
@@ -573,7 +574,7 @@ Certainly! The **State Design Pattern** is a behavioral pattern that allows an o
 Remember, the State pattern helps streamline state transitions, making your code more modular and adaptable. Whether it's a light switch, a traffic light, or any other system with changing states, this pattern provides an elegant solution! 🌟🔌
 
 ---------------------------------------
-H. Strategy
+### H. Strategy
 
 ---------------------------------------
 Certainly! The **Strategy pattern** is a powerful design pattern that allows you to define a family of algorithms, encapsulate each algorithm in a separate class, and make their objects interchangeable. Let's dive deeper into its key aspects:
@@ -602,7 +603,7 @@ Certainly! The **Strategy pattern** is a powerful design pattern that allows you
 Remember, the Strategy pattern promotes cleaner code, better separation of concerns, and improved maintainability. Feel free to ask if you need further clarification or examples! 😊
 
 ---------------------------------------
-I. Template
+### I. Template
 
 ---------------------------------------
 Certainly! The **Template Method pattern** is a design pattern that defines the skeleton of an algorithm in a superclass but allows subclasses to override specific steps without altering the overall structure. Let's explore its key aspects:
@@ -620,7 +621,7 @@ Certainly! The **Template Method pattern** is a design pattern that defines the 
 Remember, the Template Method pattern promotes code reuse, consistency, and flexibility. 😊
 
 ---------------------------------------
-J. Visitor
+### J. Visitor
 
 ---------------------------------------
 Certainly! The **Visitor pattern** is a design pattern used when you need to perform an operation on a group of similar objects. Let's explore its key aspects:
