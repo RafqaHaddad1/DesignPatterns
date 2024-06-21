@@ -1,33 +1,30 @@
 # Design Pattern
 A design pattern typically involves implementing well-established solutions to common software design problems. It focuses on structuring code in a reusable and maintainable way, enhancing software quality and developer productivity. Projects often include identifying appropriate patterns (like Singleton, Observer, or Factory), applying them to specific problem domains (like UI frameworks or database interactions), and documenting their usage for future reference. This approach not only improves code organization but also promotes a standardized way of tackling recurring design challenges across different software components.
 
-## Table of content
-- [Creational Design Patterns](#Creational-Design-Patterns)
-  - [Factory Method](#factory-method)
-  - [Abstract Factory](#Abstract-Factory)
-  - [Builder](#Builder)
-  - [Prototype](#Prototype)
-  - [Singleton](#Singleton)
-- [Structural Design Patterns](#Structural-Design-Pattern)
-  - [Adapter](#Adapter)
-  - [Bridge](#Bridge)
-  - [Composite](#Composite)
-  - [Decorator](#Decorator)
-  - [Facade](#Facade)
-  - [Flyweight](#Flyweight)
-  - [Proxy](#Proxy)
-- [Behavioral Design Patterns](#Behavioral-Design-Pattern)
-     - [Chain of Responsibility](#Chain-of-Responsibility)
-     - [Command](#Command)
-     - [Iterator](#Iterator)
-     - [Mediator](#Mediator)
-     - [Memento](#Memento)
-     - [Observer](#Observer)
-     - [State](#State)
-     - [Strategy](#Strategy)
-     - [Template Method](#Template)
-     - [Visitor](#Visitor)
-- [References](#References)
+## Table of Contents
+
+* [Creational Design Patterns](#Creational-Design-Patterns)
+    * [Factory Method](#Factory-Method)
+    * [Abstract Factory](#Abstract-Factory)
+    * [Builder](#Builder)
+    * [Prototype](#Prototype)
+    * [Singleton](#Singleton)
+* [Structural Design Patterns](#Structural-Design-Pattern)
+    * [Adapter](#Adapter)
+    * [Bridge](#Bridge)
+    * [Composite](#Composite)
+    * [Decorator](#Decorator)
+    * [Facade](#Facade)
+    * [Flyweight](#Flyweight)
+    * [Proxy](#Proxy)
+* [Behavioral Design Patterns](#Behavioral-Design-Pattern)
+    * [Chain of Responsibility](#Chain-of-Responsibility)
+    * [Command](#Command)
+    * [Iterator](#Iterator)
+    * [Mediator](#Mediator)
+    * [Memento](#Memento)
+    * [Observer](#Observer)
+
 ## Installation
 
 ## Usage
