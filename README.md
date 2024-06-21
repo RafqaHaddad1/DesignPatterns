@@ -28,9 +28,9 @@ A design pattern typically involves implementing well-established solutions to c
      - [Template Method](#template-method)
      - [Visitor](#visitor)
 ## Installation
-
 ## Usage
-Typical solutions to common problems in software design. Each pattern is like a blueprint that you can customize and implement it in various ways to solve a particular design problem in your code.
+
+## Design Patterns:
 ==============================================================
 1. Creational Design Patterns:
 Provide various object creation mechanisms, which increase flexibility and reuse of existing code. Helps make a system independent of how its objects are created, composed and represented
@@ -231,14 +231,11 @@ Certainly! The **Singleton pattern** is a software design pattern that ensures a
    - A Static Class cannot be extended whereas a singleton class can be extended.
    - A Static Class cannot be initialized whereas a singleton class can be.
    - A Static class is loaded automatically by the CLR when the program containing the class is loaded.
-
 Remember, the Singleton pattern ensures a single point of access while managing global resources! 😊
-
 ==============================================================
 2. Structural Design Pattern
 Concerned with how classes and objects are composed to from larger structures. They help ensure that when one part of a system changes, the entire structure does not need to do the same. Explain how to assemble objects and classes into larger structures, while keeping these structures flexible and efficient
 ==============================================================
-
 A. Adapter
 Certainly! The **Adapter pattern** is a structural design pattern that allows two incompatible interfaces to collaborate. Here are the key points:
 
@@ -264,20 +261,16 @@ Remember, the Adapter pattern ensures smooth collaboration between systems with 
 ==============================================================
 B. Bridge
 Certainly! The **Bridge pattern** is a structural design pattern that allows you to split a large class or closely related classes into two separate hierarchies: abstraction and implementation. Here are the key points:
-
  **Purpose and Benefits**:
    - **Decoupling Abstraction and Implementation**: The Bridge pattern separates the high-level control layer (abstraction) from the actual code that performs operations (implementation).
    - **Independently Developed Hierarchies**: Abstraction and implementation can evolve independently.
    - **Dynamic Bridge**: The bridge allows changing implementations at runtime.
-
  **Abstraction and Implementation**:
    - **Abstraction**: Represents the high-level interface that clients interact with. It defines operations without knowing implementation details.
    - **Implementation**: Provides the actual functionality. Subclasses (like DarkTheme and LightTheme) implement specific behavior.
-
  **Real-Life Scenarios**:
    - **Remote Control**: Abstraction (remote control) interacts with devices (TV, DVD player) through a bridge.
    - **Database Interface**: Abstraction defines standard database operations, while drivers (MySQL, PostgreSQL) handle specifics.
-
  **When to Use**:
    - When abstraction and implementation need to vary independently.
    - When avoiding a permanent binding between them is essential.
@@ -410,8 +403,6 @@ Different types of proxies and their use cases:
    - Improves performance by holding results of expensive operations.
    - Reuses cached results when the same inputs occur again.
    - Useful in web development for caching web pages, API calls, or database queries.
-
-
 ==============================================================
 3. Behavioral Design Pattern
 Concerned with algorithms and the assignment of responsibilities between objects, they focus on the patterns of communication between classes or objects
@@ -440,14 +431,11 @@ Certainly! The **Command Design Pattern** is a behavioral design pattern that en
 3. **Receiver**: This class knows how to perform the operations associated with carrying out a request. Any class can serve as a Receiver.
 4. **Invoker**: A class that asks the command to carry out the request.
 5. **Client**: The client creates a ConcreteCommand object and sets its receiver.
-
 In practice, the Command pattern decouples the sender (Invoker) from the receiver (Receiver), allowing for flexibility and reusability in object-oriented software. It's particularly useful when you want to avoid hard-wiring requests directly into classes and need to specify requests at runtime. If you'd like an example, consider a remote control system for various devices, where each button press corresponds to a different command. 🚀
-
 ==============================================================
 C. Iterator
 Lets you traverse elements of a collection without exposing its underlying representation (list, stack, tree…)
 ==============================================================
-
 D. Mediator
 Certainly! The **Mediator Design Pattern** is a behavioral pattern that defines an object—the mediator—to centralize communication between various components or objects in a system. By preventing direct interactions between components and having them communicate through the mediator, this pattern promotes loose coupling, better maintainability, and flexibility in system architecture¹.
 
@@ -478,7 +466,6 @@ Certainly! The **Memento Design Pattern** is a behavioral pattern that allows yo
 3. **Use Cases**:
     - When you want to produce snapshots of an object's state to restore a previous state (e.g., undo functionality).
     - When direct access to object fields or getters/setters violates encapsulation.
-
 The Memento pattern is impactful when historical states need to be maintained and restored later. It's particularly useful for reversible actions or capturing object snapshots¹. For instance, think of it as a safety net for your application's state! 📜🔍
 ==============================================================
 F. Observer
@@ -529,7 +516,6 @@ Certainly! The **State Design Pattern** is a behavioral pattern that allows an o
 
 Remember, the State pattern helps streamline state transitions, making your code more modular and adaptable. Whether it's a light switch, a traffic light, or any other system with changing states, this pattern provides an elegant solution! 🌟🔌
 
-
 ==============================================================
 H. Strategy
 Certainly! The **Strategy pattern** is a powerful design pattern that allows you to define a family of algorithms, encapsulate each algorithm in a separate class, and make their objects interchangeable. Let's dive deeper into its key aspects:
@@ -555,7 +541,6 @@ Certainly! The **Strategy pattern** is a powerful design pattern that allows you
    - **Runtime Selection**: Dynamically switch between algorithms based on user preferences or system states.
    - **Reducing Conditionals**: Eliminate conditional statements in favor of modular code.
    - **Testing and Extensibility**: Facilitate unit testing and add new algorithms without modifying existing code.
-
 Remember, the Strategy pattern promotes cleaner code, better separation of concerns, and improved maintainability. Feel free to ask if you need further clarification or examples! 😊
 ==============================================================
 I. Template
@@ -571,7 +556,6 @@ Certainly! The **Template Method pattern** is a design pattern that defines the 
 2. **When to Use the Template Method Pattern**:
    - When you want clients to extend specific steps of an algorithm without altering the entire structure.
    - When you have several classes with nearly identical algorithms, differing only in minor details.
-
 Remember, the Template Method pattern promotes code reuse, consistency, and flexibility. 😊
 ==============================================================
 J. Visitor
@@ -593,7 +577,6 @@ Certainly! The **Visitor pattern** is a design pattern used when you need to per
      - For operations across diverse objects:
        - Imagine a graphics editor with shapes (circles, rectangles, lines). Use an `ExportVisitor` to export shapes into different file formats (SVG, PNG) without altering shape classes.
        - Separating concerns allows you to add new operations without modifying existing code.
-
 Remember, the Visitor pattern promotes flexibility, maintainability, and separation of concerns 😊
 ==============================================================
 References:
