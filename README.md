@@ -638,7 +638,7 @@ If you have any questions or feedback, feel free to reach out to us:
 
 We appreciate your interest in this project!
 
-## Reference:
+## Reference
 
 https://www.tutorialspoint.com/design_pattern/index.htm
 
