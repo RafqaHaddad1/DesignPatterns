@@ -71,7 +71,7 @@ The **Factory Method Pattern** provides an interface for creating objects in a s
 - Abstracts the process of object creation to promote loose coupling.
 - Allows subclasses to determine the specific class to instantiate, promoting flexibility.
 
-### 🛠️ When to Use
+### 🤔 When to Use
 - When you don't know the exact types and dependencies of objects your code should work with.
 - To extend the internal components of a library or framework.
 - When reusing existing objects is more efficient.
@@ -99,7 +99,7 @@ The **Abstract Factory Pattern** organizes the creation of related or dependent 
 - Defines interfaces for each product type, allowing different variants to implement these interfaces.
 - Enables addition of new product families or variants without altering existing code.
 - 
-### 🛠️ When to use
+### 🤔 When to use
 - You need to create related objects without depending on concrete classes.
 - You want to switch between different types easily while following the same rules.
 - Consider implementing the abstract factory method when a class deals with multiple product types.
