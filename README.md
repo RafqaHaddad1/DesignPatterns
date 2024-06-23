@@ -7,7 +7,7 @@ Shout-out to [Refactoring Guru]( https://refactoring.guru/design-patterns/)! The
 
 # Project Structure
 
-This is .NET 8.0 frameowrk C# project introducing design patterns.
+This is .NET 8.0 C# project introducing design patterns.
 
 The project is structured as follows:
 
