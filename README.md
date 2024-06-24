@@ -62,7 +62,7 @@ Provide various object creation mechanisms, which increase flexibility and reuse
 
 ## A. Factory Method ~ Creational Design Pattern
 
-The **Factory Method Pattern** provides an interface for creating objects in a superclass while allowing subclasses to determine the specific class or object to instantiatem, allowing for flexibility and extensibility in software design. It's particularly useful when dealing with varying object types or when you want to encapsulate object creation logic
+The **Factory Method Pattern** provides an interface for creating objects in a superclass while allowing subclasses to determine the specific class or object to instantiate, allowing for flexibility and extensibility in software design. It's particularly useful when dealing with varying object types or when you want to encapsulate object creation logic
 
 <div>
       <img src="https://refactoring.guru/images/patterns/diagrams/factory-method/solution3-en.png" alt="Factory Method Pattern Solution" style="width: 45%;">
