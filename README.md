@@ -5,6 +5,9 @@ A design pattern project typically involves implementing well-established soluti
 
 Shout-out to [Refactoring Guru]( https://refactoring.guru/design-patterns/)! Their website indeed provides clear and insightful explanations of various design patterns with helpful visual diagrams. It's a fantastic resource for anyone looking to deepen their understanding of software design principles and patterns.
 
+Below, you'll find all design patterns with brief explanations
+
+
 # Project Structure
 
 This is .NET 8.0 C# project introducing design patterns.
